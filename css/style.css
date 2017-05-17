@@ -8,6 +8,12 @@ button{
     border:none !important;
     background: transparent;
 }
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+}
 .button-tmp{
     width: 150px;
     text-align: center;
@@ -40,7 +46,7 @@ section{
     padding: 30px 0px;
 }
 .blue{
-    color: rgb(73, 177, 223);
+    color: rgb(73, 177, 223) !important;
 }
 .lighter{
     font-weight: 100 !important;
@@ -250,7 +256,12 @@ header .post-scr .blue:after{
 /*HOW IT WIRKS SECTION*/
 
 .how-it-works {
-    
+    background: url(../img/bg2.png)  bottom;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-bottom: 120px;
+    z-index: 1;
+    position: relative;
 }
 .how-it-works .section-title{
     text-align: center;
@@ -262,7 +273,7 @@ header .post-scr .blue:after{
 }
 /*DIAGRAM*/
 .diagram-block{
-    padding: 40px 0px;
+    padding: 80px 0px;
     padding-bottom: 0px;
 }
 .diagram-block div{
@@ -293,4 +304,148 @@ header .post-scr .blue:after{
     background: url(../img/dashed_line.png) top center no-repeat;
     padding-top: 100px !important;
     padding-left: 80px !important;
+}
+.athlete, .capture {
+    text-align: right;
+}
+.athlete{
+    margin-top: 120px;
+}
+
+.athlete h1, .capture h1{
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(121, 127, 134);
+}
+.capture h1:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    background-image: url(../img/dashed-capture.png);
+    margin: -13px 0px;
+    left: -50px;
+    width: 60%;
+    height: 100%;
+}
+.athlete h1:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    background-image: url(../img/dashed-capture.png);
+    margin: -13px 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+}
+.athlete p, .capture p{
+    font-size: 18px;
+}
+.capture h1{
+    color: rgb(73, 177, 223);
+}
+/*ground-breaking*/
+.ground-breaking{
+    padding-top: 400px;
+    padding-bottom: 100px;
+    margin-top: -300px;
+    border-bottom:10px solid rgb(73, 177, 223);
+    z-index: 0;
+    background: url(../img/bg.png) center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+.ground-breaking:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    
+}
+.ground-breaking h1{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 60px;
+}
+.ground-breaking h3{
+    text-align: center;
+    color: rgb(73, 177, 223);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.ground-breaking .row{
+    margin-top: 150px;
+}
+.ground-breaking .row div:nth-child(2) p:not(.large){
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    left: 0;
+}
+.ground-breaking .row .number{
+    display: block !important;
+    text-align: center !important;
+    font-size: 80px !important;
+    font-weight: bold !important;
+    color: #fff;
+    letter-spacing: 3px !important;
+}
+.ground-breaking .row .large{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 3px !important;
+}
+.ground-breaking .row p{
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+}
+.ground-breaking .row p > span.non-block{
+    font-size: 40px !important;
+    font-weight: 400;
+}
+.ground-breaking  p.comment{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 75px;
+}
+/*elite teams*/
+.elite-teams{
+    position: relative;
+    height: 100%;
+    background: url(../img/world-map.png) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.elite-teams h1{
+    font-size: 80px;
+    letter-spacing: 3px;
+    padding: 40px 0px;
+}
+.elite-teams .desc{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 70%;
+    margin: 0 -35%;
+    text-align: center;
+}
+.elite-teams .desc p{
+    font-size: 40px;
+}
+.elite-teams .desc p.author{
+    font-size: 25px;
+    margin-top: 40px;
+}
+.elite-teams .desc p.address{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
