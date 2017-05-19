@@ -4,6 +4,17 @@
     box-sizing: border-box;
     transition: 0.3s;
 }
+body{
+    background-color: #fff;
+}
+.bg-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.12);
+}
 button{
     border:none !important;
     background: transparent;
@@ -256,10 +267,10 @@ header .post-scr .blue:after{
 /*HOW IT WIRKS SECTION*/
 
 .how-it-works {
-    background: url(../img/bg2.png)  bottom;
+    background: url(../img/bg2.png);
     -webkit-background-size: cover;
     background-size: cover;
-    padding-bottom: 120px;
+    padding-bottom: 200px;
     z-index: 1;
     position: relative;
 }
@@ -420,8 +431,6 @@ header .post-scr .blue:after{
     position: relative;
     height: 100%;
     background: url(../img/world-map.png) center center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
 }
 .elite-teams h1{
     font-size: 80px;
