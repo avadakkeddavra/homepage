@@ -458,3 +458,35 @@ header .post-scr .blue:after{
     font-weight: bold;
     letter-spacing: 3px;
 }
+/*begind youe team*/
+.behind-your-team{
+    background: url(../img/Team%20Environment%206.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+.behind-your-team h1{
+    font-size: 60px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.behind-your-team .features{
+    text-align: center;
+}
+.behind-your-team .features > div > .large{
+    min-height: 140px;
+}
+.behind-your-team .features > div:nth-child(2) .large {
+    font-size: 70px;
+}
+.behind-your-team .features > div:nth-child(2) p > span{
+    font-size: 30px;
+    line-height: 0;
+
+    display: block;
+}
+.behind-your-team .features .large{
+    font-size: 100px;
+    font-weight: bold;
+}
